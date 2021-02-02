@@ -6,8 +6,7 @@ type LetterTypes = {
   letter: string;
   feedback: string;
   index: number;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  onClick: any;
+  onClick: (res: string) => void;
 };
 function Letter({
   letter,
